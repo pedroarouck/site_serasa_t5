@@ -6,30 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
 </head>
 <body>
-    <header>
-        <ul>
-            <li>Compre</li>
-            <li>cadastre-se</li>
-        </ul>
-        cabecalho da pagina
+    <header class="cabecalho">
+        <a class="cabecalho_logo" href="index.html">SERASA</a>
+        <nav>
+            <ul class="cabecalho_menu">
+                <li class="cabecalho_menu-item"><a href="sobre.html#contato">Contato</a></li>
+                <li class="cabecalho_menu-item"><a href="#">Entrar</a></li>
+                <li class="cabecalho_menu-destaque"><a href="sobre.html">Conheça</a></li>
+            </ul>
+        </nav>
     </header>
-    <body>
-        <main>
+    
+    <main>
+        conteudo principal
+    </main>
+    
+    <footer class="rodape">
+        <section class="rodape_secao">
+            <h2>Informações de Contato</h2>
+            <address>
+                SERASA
+                <br>
+                Av. Paulista, 12345, 5o andar
+                <br>
+                Bairro Paraíso
+                <br>
+                Sao Paulo - SP
+            </address>
+
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+        </section>
+
+        <section class="rodape_secao">
+            <h2>Servicos Disponiveis</h2>
+            <ul>
+                <li>Servicos 1</li>
+                <li>Servicos 2</li>
+                <li>Servicos 3</li>
+                <li>Servicos 4</li>
+            </ul>
+        </section>
+
+        <section class="rodape_secao">
+            <nav>
+                <ul>
+                    <li>Perguntas Frequentes</li>
+                    <li>Sobre-nos</li>
+                    <li>Contato</li>
+                    <li>Ajuda</li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section class="rodape_secao">
+            <h2>Receba nossas novidades</h2>
             <form action="#" method="post">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" value="Insira seu nome">
+                <label for="form-newsletter">
+                    Insira seu e-mail
+                </label>
+                <input id="form-newsletter" type="email">
+                <button type="submit"> OK </button>
+                
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="exemplo@email.com">
-
-                <button type="submit">Enviar</button>
             </form>
-        </main>
-    </body>
-    <footer>
-        rodape
+        </section>
     </footer>
 </body>
 </html>
+
+
