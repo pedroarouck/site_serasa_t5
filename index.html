@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/rodape.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <a class="cabecalho_logo" href="index.html">SERASA</a>
@@ -19,15 +22,15 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         conteudo principal
     </main>
-    
+
     <footer class="rodape">
         <section class="rodape_secao">
-            <h2>Informações de Contato</h2>
-            <address>
+            <h2 class="rodape_titulo">Informações de Contato</h2>
+            <address class="rodape_info-endereco">
                 SERASA
                 <br>
                 Av. Paulista, 12345, 5o andar
@@ -37,48 +40,48 @@
                 Sao Paulo - SP
             </address>
 
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Twitter</li>
+            <ul class="rodape_lista-redes-sociais">
+                <li class="rodape_item-redes-socias"><a href="https://www.facebook.com" target="_blank">Facebook</a>
+                </li>
+                <li class="rodape_item-redes-socias"><a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </li>
+                <li class="rodape_item-redes-socias"><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
             </ul>
         </section>
 
         <section class="rodape_secao">
-            <h2>Servicos Disponiveis</h2>
+            <h2 class="rodape_titulo">Serviços Disponíveis</h2>
             <ul>
-                <li>Servicos 1</li>
-                <li>Servicos 2</li>
-                <li>Servicos 3</li>
-                <li>Servicos 4</li>
+                <li class="rodape_item-lista">Serviços 1</li>
+                <li class="rodape_item-lista">Serviços 2</li>
+                <li class="rodape_item-lista">Serviços 3</li>
+                <li class="rodape_item-lista">Serviços 4</li>
             </ul>
         </section>
 
         <section class="rodape_secao">
+            <h2 class="rodape_titulo">SERASA</h2>
             <nav>
                 <ul>
-                    <li>Perguntas Frequentes</li>
-                    <li>Sobre-nos</li>
-                    <li>Contato</li>
-                    <li>Ajuda</li>
+                    <li class="rodape_item-lista">Perguntas Frequentes</li>
+                    <li class="rodape_item-lista">Sobre-nos</li>
+                    <li class="rodape_item-lista">Contato</li>
+                    <li class="rodape_item-lista">Ajuda</li>
                 </ul>
             </nav>
         </section>
-        
+
         <section class="rodape_secao">
-            <h2>Receba nossas novidades</h2>
-            <form action="#" method="post">
-                <label for="form-newsletter">
+            <h2 class="rodape_titulo">Receba nossas novidades</h2>
+            <form action="#" method="post" class="rodape_newsletter-form">
+                <label for="form-newsletter" class="rodape_newsletter-label">
                     Insira seu e-mail
                 </label>
-                <input id="form-newsletter" type="email">
-                <button type="submit"> OK </button>
-                
-
+                <input id="form-newsletter" name="email-newsletter" type="email" class="rodape_newsletter-form"  placeholder="Insira seu email">
+                <button type="submit" class="rodape_newsletter-botao"> OK </button>
             </form>
         </section>
     </footer>
 </body>
+
 </html>
-
-
