@@ -1,0 +1,67 @@
+.produtos {
+    background-color: rgb(111, 111, 230);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+.botao {
+    margin-left: 1.42em;
+    border-radius: 6px;
+    background-color: red;
+    text-transform: uppercase;
+    color:white;
+    margin-right: 1em;
+    padding: 1em 50px;
+    
+}
+
+.botao:hover{
+    transition: 1s;
+    background: rebeccapurple;
+}
+
+.produtos_chamada {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: left;
+    width: 300px;
+}
+
+.produtos_item {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.produtos_lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:
+        " destaque . ."
+        " destaque . .";
+    gap:20px;
+    padding: 1em;
+    
+    
+}
+
+.produto-destaque {
+    grid-area: destaque;
+    height: 420px;
+}
+
+.chamada_titulo {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
