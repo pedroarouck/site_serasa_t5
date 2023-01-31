@@ -74,5 +74,19 @@
     <button>Enviar</button>
 </form>
 <script>
-
+    const formulario = document.querySelector('form');
+    
+    formulario.addEventListener('submit',function(){
+        event.preventDefault();
+        const camposObrigatorios = formulario.querySelectorAll('.obrigatorio');
+        const mensagemErro = [];
+        for (let campo of camposObrigatorios){
+            if (campo.value === ''){
+                campo.classList.add('destacar');
+            }
+            else {
+                campo.classList.remove('destacar');
+            }
+        }
+    })
 </script>

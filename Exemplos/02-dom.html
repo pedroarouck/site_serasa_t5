@@ -26,5 +26,18 @@
 <p id="p10">Parágrafo 10</p>
 
 <script>
+    // window.addEventListener('load', function(){
+    //     alert('Executando alerta 1.');
+    // })
+
+    const p10 = document.querySelector('#p10');
+    console.log(p10);
+    p10.textContent = "Texto alterado usando JS"
+
+    const vermelhos = document.querySelectorAll('p.vermelho');
+    console.log(vermelhos);
+    for (let i = 0; i <= vermelhos.length; i++){
+        vermelhos[i].textContent = "Texto alterado usando JS!"  
+    }
 
 </script>

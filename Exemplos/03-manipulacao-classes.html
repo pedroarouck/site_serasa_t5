@@ -24,5 +24,39 @@
 <button id="btn5" class="vermelho">Botão 5</button>
 
 <script>
+    const btn1 = document.querySelector('#btn1');
+    const btn2 = document.querySelector('#btn2');
+    const btn3 = document.querySelector('#btn3');
+    const btn4 = document.querySelector('#btn4');
+    const btn5 = document.querySelector('#btn5');
 
+    btn1.addEventListener('click',function(){
+        btn1.classList.add('vermelho');
+    });
+
+    btn2.addEventListener('click',function(){
+        btn2.classList.remove('vermelho');
+    });
+
+    btn3.addEventListener('click', function(){
+        btn3.classList.toggle('vermelho');
+    });
+
+    btn4.addEventListener('click',function(){
+        let temClasseVermelho = btn4.classList.contains('vermelho');
+        // if (temClasseVermelho === true){
+        //     alert('O botão TEM classe vermelho');
+        // }
+        // else {
+        //     alert('O botão NAO TEM classe vermelho');
+        // }
+
+        temClasseVermelho ? alert('O botão TEM classe vermelho') : alert('O botão NAO TEM classe vermelho');
+        
+        btn4.classList.toggle('vermelho');
+    })
+
+    btn5.addEventListener('click',function(){
+        btn5.classList.replace('vermelho', 'verde');
+    });
 </script>
