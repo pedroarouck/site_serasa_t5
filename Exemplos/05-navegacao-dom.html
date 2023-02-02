@@ -74,5 +74,37 @@
     }
 </style>
 <script>
+    const tabela = document.querySelector('table');
 
+    tabela.addEventListener('click', event => {
+        if (event.target.classList.contains('excluir')) {
+            alert('Voce clicou no botão EXCLUIR');
+            const btnExcluir = event.target;
+            const tr = btnExcluir.closest('tr');
+            tr.remove();
+        }
+    });
+
+    tabela.addEventListener('click', event => {
+        if (event.target.classList.contains('editar')) {
+            const btnEditar = event.target;
+            let isConteudoEditavel = false;
+
+            if (btnEditar.textContent.trim() == 'Editar') {
+                btnEditar.textContent = 'Salvar Edicao';
+                isConteudoEditavel = true;
+            }
+            else {
+                btnEditar.textContent = 'Editar'
+            }
+
+            let tdIrmao = btnEditar.parentElement.previousElementSibling;
+
+            while (tdIrmao != null) {
+                tdIrmao.classList.toggle('editavel');
+                tdIrmao.contentEditable = isConteudoEditavel;
+                tdIrmao = tdIrmao.previousElementSibling;
+            }
+        }
+    });
 </script>
